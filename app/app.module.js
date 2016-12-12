@@ -16,6 +16,7 @@ var dashboard_component_1 = require("./dashboard.component");
 var home_component_1 = require("./home.component");
 var music_component_1 = require("./music.component");
 var books_component_1 = require("./books.component");
+var movies_component_1 = require("./movies.component");
 var hero_detail_component_1 = require("./hero-detail.component");
 var heroes_component_1 = require("./heroes.component");
 var hero_service_1 = require("./hero.service");
@@ -38,6 +39,7 @@ AppModule = __decorate([
             home_component_1.HomeComponent,
             music_component_1.MusicComponent,
             books_component_1.BooksComponent,
+            movies_component_1.MoviesComponent,
             hero_detail_component_1.HeroDetailComponent,
             heroes_component_1.HeroesComponent
         ],

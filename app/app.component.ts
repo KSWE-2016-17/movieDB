@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
     <!-- <h1>{{title}}</h1> -->
     <nav>
       
-      <img src="content/logo.png" alt="Logo" />
+      <a routerLink="/home" routerLinkActive="active"><img src="content/logo.png" alt="Logo / Home" /></a>
       Suchfeld...
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <a routerLink="/heroes" routerLinkActive="active">Filter (Dropdown)</a>
-      <a routerLink="/home" routerLinkActive="active">Filme</a>
+      <a routerLink="/movies" routerLinkActive="active">Filme</a>
       <a routerLink="/music" routerLinkActive="active">Musik</a>
       <a routerLink="/books" routerLinkActive="active">Bücher</a>
       <a routerLink="/heroes" routerLinkActive="active">Heroes (debug)</a>

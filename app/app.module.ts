@@ -7,6 +7,7 @@ import { DashboardComponent }   from './dashboard.component';
 import { HomeComponent }        from './home.component';
 import { MusicComponent }        from './music.component';
 import { BooksComponent }        from './books.component';
+import { MoviesComponent }        from './movies.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 import { HeroesComponent }      from './heroes.component';
 import { HeroService }          from './hero.service';
@@ -24,7 +25,8 @@ import { AppRoutingModule }     from './app-routing.module';
     DashboardComponent,
     HomeComponent,
       MusicComponent,
-      BooksComponent,
+    BooksComponent,
+    MoviesComponent,
     HeroDetailComponent,
     HeroesComponent
   ],

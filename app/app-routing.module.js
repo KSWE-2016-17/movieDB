@@ -14,6 +14,7 @@ var dashboard_component_1 = require("./dashboard.component");
 var heroes_component_1 = require("./heroes.component");
 var music_component_1 = require("./music.component");
 var books_component_1 = require("./books.component");
+var movies_component_1 = require("./movies.component");
 var hero_detail_component_1 = require("./hero-detail.component");
 var home_component_1 = require("./home.component");
 var routes = [
@@ -22,6 +23,7 @@ var routes = [
     { path: 'home', component: home_component_1.HomeComponent },
     { path: 'music', component: music_component_1.MusicComponent },
     { path: 'books', component: books_component_1.BooksComponent },
+    { path: 'movies', component: movies_component_1.MoviesComponent },
     { path: 'detail/:id', component: hero_detail_component_1.HeroDetailComponent },
     { path: 'heroes', component: heroes_component_1.HeroesComponent }
 ];
