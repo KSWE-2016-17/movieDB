@@ -10,13 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var dashboard_component_1 = require("./dashboard.component");
-var heroes_component_1 = require("./heroes.component");
-var music_component_1 = require("./music.component");
-var books_component_1 = require("./books.component");
-var movies_component_1 = require("./movies.component");
-var hero_detail_component_1 = require("./hero-detail.component");
-var home_component_1 = require("./home.component");
+var dashboard_component_1 = require("./components/dashboard.component");
+var heroes_component_1 = require("./components/heroes.component");
+var music_component_1 = require("./components/music.component");
+var books_component_1 = require("./components/books.component");
+var movies_component_1 = require("./components/movies.component");
+var hero_detail_component_1 = require("./components/hero-detail.component");
+var home_component_1 = require("./components/home.component");
 var routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'dashboard', component: dashboard_component_1.DashboardComponent },

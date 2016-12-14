@@ -1,13 +1,13 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DashboardComponent }   from './dashboard.component';
-import { HeroesComponent }      from './heroes.component';
-import { MusicComponent }      from './music.component';
-import { BooksComponent }      from './books.component';
-import { MoviesComponent }      from './movies.component';
-import { HeroDetailComponent }  from './hero-detail.component';
-import { HomeComponent } from "./home.component";
+import { DashboardComponent }   from './components/dashboard.component';
+import { HeroesComponent }      from './components/heroes.component';
+import { MusicComponent }      from './components/music.component';
+import { BooksComponent }      from './components/books.component';
+import { MoviesComponent }      from './components/movies.component';
+import { HeroDetailComponent }  from './components/hero-detail.component';
+import { HomeComponent } from "./components/home.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
