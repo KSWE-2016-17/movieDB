@@ -9,21 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var MoviesComponent = (function () {
-    function MoviesComponent() {
+var HomeComponent = (function () {
+    function HomeComponent() {
     }
-    MoviesComponent.prototype.ngOnInit = function () {
+    HomeComponent.prototype.ngOnInit = function () {
     };
-    return MoviesComponent;
+    return HomeComponent;
 }());
-MoviesComponent = __decorate([
+HomeComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'my-movies',
-        templateUrl: 'movies.component.html',
-        styleUrls: ['movies.component.css']
+        selector: 'my-home',
+        templateUrl: './views/home.component.html',
+        styleUrls: ['./views/styles/home.component.css']
     }),
     __metadata("design:paramtypes", [])
-], MoviesComponent);
-exports.MoviesComponent = MoviesComponent;
-//# sourceMappingURL=movies.component.js.map
+], HomeComponent);
+exports.HomeComponent = HomeComponent;
+//# sourceMappingURL=home.component.js.map

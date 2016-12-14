@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Hero } from './hero';
-import { HeroService } from './hero.service';
+import { Hero } from './class/hero';
+import { HeroService } from './service/hero.service';
 
 @Component({
   moduleId: module.id,
   selector: 'my-movies',
-  templateUrl: 'movies.component.html',
-  styleUrls: [ 'movies.component.css' ]
+  templateUrl: './views/movies.component.html',
+  styleUrls: [ './views/styles/movies.component.css' ]
 })
 export class MoviesComponent implements OnInit {
 

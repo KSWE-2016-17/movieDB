@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var common_1 = require("@angular/common");
-var hero_service_1 = require("./hero.service");
+var hero_service_1 = require("./service/hero.service");
 var HeroDetailComponent = (function () {
     function HeroDetailComponent(heroService, route, location) {
         this.heroService = heroService;
@@ -35,8 +35,8 @@ HeroDetailComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'my-hero-detail',
-        templateUrl: 'hero-detail.component.html',
-        styleUrls: ['hero-detail.component.css']
+        templateUrl: './views/hero-detail.component.html',
+        styleUrls: ['./views/styles/hero-detail.component.css']
     }),
     __metadata("design:paramtypes", [hero_service_1.HeroService,
         router_1.ActivatedRoute,
