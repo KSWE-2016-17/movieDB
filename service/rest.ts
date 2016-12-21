@@ -10,10 +10,14 @@ export class Rest {
     static get parameters() {
         return [{Http}];
     }
-}
 
-function getMovie(movie_name: any, movie_date: any){
+    constructor(private http:Http){
+    }
+
+    getMovie(movie_name: any, movie_date: any){
     let url= 'http://www.omdbapi.com/?t=' + encodeURI(movie_name) + '?y=' + encodeURI(movie_date) + '&plot=short&r=jason';
     let response: any;
     return this.http.get(url).map(res => res.json());
 }
+}
+
