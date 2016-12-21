@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var hero_service_1 = require("./hero.service");
+var hero_service_1 = require("./service/hero.service");
 var DashboardComponent = (function () {
     function DashboardComponent(router, heroService) {
         this.router = router;
@@ -32,8 +32,8 @@ DashboardComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'my-dashboard',
-        templateUrl: 'dashboard.component.html',
-        styleUrls: ['dashboard.component.css']
+        templateUrl: './views/dashboard.component.html',
+        styleUrls: ['./views/styles/dashboard.component.css']
     }),
     __metadata("design:paramtypes", [router_1.Router,
         hero_service_1.HeroService])
