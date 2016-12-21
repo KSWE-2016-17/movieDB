@@ -17,3 +17,7 @@ To start our application, run inside the folder
 ```
 npm start
 ```
+
+Your default browser will automatically start our application in a new tab.
+
+Enjoy!
