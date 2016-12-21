@@ -11,6 +11,7 @@ import { MoviesComponent }        from './components/movies.component';
 import { HeroDetailComponent }  from './components/hero-detail.component';
 import { HeroesComponent }      from './components/heroes.component';
 import { HeroService }          from './components/service/hero.service';
+import { Rest }          from './components/service/rest';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -30,7 +31,7 @@ import { AppRoutingModule }     from './app-routing.module';
     HeroDetailComponent,
     HeroesComponent
   ],
-  providers: [ HeroService ],
+  providers: [ HeroService, Rest ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
