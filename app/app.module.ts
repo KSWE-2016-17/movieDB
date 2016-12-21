@@ -12,6 +12,7 @@ import { HeroDetailComponent }  from './components/hero-detail.component';
 import { HeroesComponent }      from './components/heroes.component';
 import { HeroService }          from './components/service/hero.service';
 import { Rest }          from './components/service/rest';
+import { AUTH_PROVIDERS } from 'angular2-jwt';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -31,7 +32,7 @@ import { AppRoutingModule }     from './app-routing.module';
     HeroDetailComponent,
     HeroesComponent
   ],
-  providers: [ HeroService, Rest ],
+  providers: [ HeroService, Rest, AUTH_PROVIDERS ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
