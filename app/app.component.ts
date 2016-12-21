@@ -8,8 +8,12 @@ import { Component } from '@angular/core';
     <nav>
       
       <a routerLink="/home" routerLinkActive="active"><img src="content/logo.png" alt="Logo / Home" /></a>
-      Suchfeld...
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      
+      <input (keyup.enter)="onKey($event)">
+     <!-- 
+     <p>{{suchString}}</p> 
+     -->
+      
       <a routerLink="/heroes" routerLinkActive="active">Filter (Dropdown)</a>
       <a routerLink="/movies" routerLinkActive="active">Filme</a>
       <a routerLink="/music" routerLinkActive="active">Musik</a>
@@ -24,4 +28,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AngularDB';
   logo = 'content/logo.png';
+
+  suchString = '';
+
+  onKey(event: KeyboardEvent) { // with type info
+    this.suchString = (<HTMLInputElement>event.target).value;
+  }
 }
