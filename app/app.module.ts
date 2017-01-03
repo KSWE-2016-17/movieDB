@@ -1,6 +1,7 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './components/dashboard.component';
@@ -12,13 +13,13 @@ import { HeroDetailComponent }  from './components/hero-detail.component';
 import { HeroesComponent }      from './components/heroes.component';
 import { HeroService }          from './components/service/hero.service';
 import { Rest }          from './components/service/rest';
-import { AUTH_PROVIDERS } from 'angular2-jwt';
 
 import { AppRoutingModule }     from './app-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
+    HttpModule,
     FormsModule,
     AppRoutingModule
   ],
@@ -32,7 +33,7 @@ import { AppRoutingModule }     from './app-routing.module';
     HeroDetailComponent,
     HeroesComponent
   ],
-  providers: [ HeroService, Rest, AUTH_PROVIDERS ],
+  providers: [ HeroService, Rest ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
