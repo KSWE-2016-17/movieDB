@@ -3,31 +3,29 @@ import { Router } from '@angular/router';
 import { Hero } from './class/hero';
 import { HeroService } from './service/hero.service';
 import { Rest } from './service/rest';
-import { AUTH_PROVIDERS } from 'angular2-jwt';
 
-import {Movie} from "./class/movie";
 
 @Component({
   moduleId: module.id,
   selector: 'my-movies',
   templateUrl: './views/movies.component.html',
   styleUrls: [ './views/styles/movies.component.css' ],
-  providers: [Rest,AUTH_PROVIDERS]
+  providers:[Rest]
 })
-export class MoviesComponent implements OnInit {
+export class MoviesComponent{
 
-	constructor(private rest:Rest, private movie:Movie) {
-		this.getMovie();
+	getData:string;
+
+	constructor(private rest:Rest){
 	}
 
-  ngOnInit(): void {
-  }
 
-  getMovie() {
-	this.rest.getMovie("", "").subscribe((data:any) =>{this.fillMovie(data);});
- }
+ 	getMovie() {
+		this.rest.getMovie("fantomas", "").subscribe(
+			data => this.getData = JSON.stringify(data.Title),
+			error => console.log(error),
+			()=>console.log('test ende')
+		);
+	}
 
- fillMovie(data:any){
-	this.movie.title = data.error;
  }
-}
