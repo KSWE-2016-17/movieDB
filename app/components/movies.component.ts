@@ -18,7 +18,6 @@ export class MoviesComponent {
 			text => {
 				this.getMovies(text, "");
 				console.log("Text empfangen");
-				this.fillList();
 			}
 		)
 	}

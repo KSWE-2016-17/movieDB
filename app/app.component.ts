@@ -8,10 +8,11 @@ import { SearchService } from './components/service/searchservice';
   template: `
     <!-- <h1>{{title}}</h1> -->
     <nav>
-      
+      <!--
       <a routerLink="/home" routerLinkActive="active"><img src="content/logo.png" alt="Logo / Home" /></a>
+     -->
+      <a routerLink="/home" routerLinkActive="active">Startseite</a>
       <input type="text" [(ngModel)]="suche" (ngModelChange)="load()" ng-model-options="{ debounce: 1000 }" placeholder="Search movie" />
-      <a routerLink="/heroes" routerLinkActive="active">Filter (Dropdown)</a>
       <a routerLink="/movies" routerLinkActive="active">Filme</a>
       <a routerLink="/music" routerLinkActive="active">Musik</a>
       <a routerLink="/books" routerLinkActive="active">Bücher</a>
