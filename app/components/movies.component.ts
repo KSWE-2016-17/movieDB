@@ -1,7 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Hero } from './class/hero';
-import { HeroService } from './service/hero.service';
 import { Rest } from './service/rest';
 import { SearchService } from './service/searchservice';
 
@@ -10,31 +8,28 @@ import { SearchService } from './service/searchservice';
   selector: 'my-movies',
   templateUrl: './views/movies.component.html',
   styleUrls: [ './views/styles/movies.component.css' ],
-  //providers:[Rest]
 })
-export class MoviesComponent implements OnInit{
+export class MoviesComponent {
 
-	@Input() getData;
+	getData;
 
 	constructor(private rest:Rest, private _searchService:SearchService){
 		this._searchService.searchTextStream$.subscribe(
 			text => {
-				this.getMovie(text, "");
+				this.getMovies(text, "");
 				console.log("Text empfangen");
+				this.fillList();
 			}
 		)
 	}
 
 
- 	getMovie(name, year) {
-		this.rest.getMovie(name, year).subscribe(
-			data => this.getData = JSON.stringify(data.Title),
+ 	getMovies(name, year) {
+		this.rest.getMovies(name, year).subscribe(
+			data => this.getData = JSON.stringify(data),
 			error => console.log(error),
 			()=>console.log('test ende ' + name)
 		);
 	}
-
-
-	ngOnInit() {}
 
  }

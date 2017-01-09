@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges} from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { SearchService } from './components/service/searchservice';
 
@@ -10,7 +10,7 @@ import { SearchService } from './components/service/searchservice';
     <nav>
       
       <a routerLink="/home" routerLinkActive="active"><img src="content/logo.png" alt="Logo / Home" /></a>
-      <input type="text" [(ngModel)]="suche" (ngModelChange)="load()" ng-model-options="{ debounce: 800 }" placeholder="Search movie" />
+      <input type="text" [(ngModel)]="suche" (ngModelChange)="load()" ng-model-options="{ debounce: 1000 }" placeholder="Search movie" />
       <a routerLink="/heroes" routerLinkActive="active">Filter (Dropdown)</a>
       <a routerLink="/movies" routerLinkActive="active">Filme</a>
       <a routerLink="/music" routerLinkActive="active">Musik</a>
@@ -19,9 +19,8 @@ import { SearchService } from './components/service/searchservice';
     <router-outlet></router-outlet>
   `,
   styleUrls: ['./components/views/styles/app.component.css'],
-  //providers: [MoviesComponent]
 })
-export class AppComponent implements OnChanges {
+export class AppComponent {
 
   @Input() suche;
 
@@ -31,9 +30,6 @@ export class AppComponent implements OnChanges {
 	this._searchService.broadcastTextChange(this.suche);
 	console.log("change detected " + this.suche);
   }
-
-  ngOnChanges() {
-}
 
   title = 'AngularDB';
   logo = 'content/logo.png';
