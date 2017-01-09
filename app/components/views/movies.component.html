@@ -1,5 +1,6 @@
 <h3>MOVIES</h3>
-<p>Most puloar / most viewed movies</p>
-<p>best rated movies</p>
-<button (click) = "getMovie()">Test</button>
-<p>Meldung: {{getData}}</p>
+<div ng-if="getData.Response==='True'">
+<ul><li ng-repeat="movie in getData.Search">
+	<p> {{ movie.Title }} </p>
+</li></ul>
+</div>

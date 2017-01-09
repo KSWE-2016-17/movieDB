@@ -12,11 +12,16 @@ export class Rest {
     constructor(private http:Http){
     }
 
-    getMovie(movie_name: any, movie_date: any){
-    	var url= 'http://www.omdbapi.com/?t=' + encodeURI(movie_name) + '&y=' + encodeURI(movie_date) + '&plot=short&r=json';
+    getSingleMovie(movie_name: any, movie_year: any){
+    	var url= 'http://www.omdbapi.com/?t=' + encodeURI(movie_name) + '&y=' + encodeURI(movie_year) + '&plot=short&r=json';
     	var response = this.http.get(url).map(res => res.json());
     	return response;
     }
 
+     getMovies(movie_name: any, movie_year:any){
+    	var url= 'http://www.omdbapi.com/?s=' + encodeURI(movie_name) + '&y=' + encodeURI(movie_year) + '&r=json';
+	var response = this.http.get(url).map(res => res.json());
+	return response;
+     }
 }
 
