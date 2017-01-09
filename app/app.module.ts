@@ -13,6 +13,7 @@ import { HeroDetailComponent }  from './components/hero-detail.component';
 import { HeroesComponent }      from './components/heroes.component';
 import { HeroService }          from './components/service/hero.service';
 import { Rest }          from './components/service/rest';
+import { SearchService } from './components/service/searchservice';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -33,7 +34,7 @@ import { AppRoutingModule }     from './app-routing.module';
     HeroDetailComponent,
     HeroesComponent
   ],
-  providers: [ HeroService, Rest ],
+  providers: [ HeroService, Rest, SearchService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
