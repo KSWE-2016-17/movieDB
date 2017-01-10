@@ -1,6 +1,13 @@
 **Project from the FH-Bielefeld in Germany**
 
+A universal Database powered by AngularJS.
+
 How to install:
+
+First you need to install Angular. Run in your terminal:
+```
+sudo npm install -g angular-cli
+```
 
 Navigate to the folder, where you wish to have this application stored. Then you need to clone this repository
 ```
