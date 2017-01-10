@@ -1,6 +1,4 @@
-**Project from the FH-Bielefeld in Germany**
-
-A universal Database powered by AngularJS.
+**Project from the FH-Bielefeld in Germany - A universal Database powered by AngularJS. **
 
 How to install:
 
