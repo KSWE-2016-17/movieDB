@@ -34,7 +34,6 @@ app/components/service/restService.js
 app/components/service/restService.js.map
 app/components/service/searchservice.js
 app/components/service/searchservice.js.map
-app/components/service/searchservice.ts
 app/main.js
 app/main.js.map
 node_modules/
