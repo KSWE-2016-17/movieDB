@@ -1,6 +1,20 @@
-<h3>MOVIES</h3>
-<div ng-if="getData.Response==='True'">
-<ul><li ng-repeat="movie in getData.Search">
-	<p> {{ movie.Title }} </p>
-</li></ul>
-</div>
+<h3>MOVIES</h3><br><br>
+<h2 style="text-align:center">{{ movie.Title }}</h2>
+<figure>
+<img src="{{movie.Poster}}" alt="Poster">
+</figure>
+<div id="mitte">
+	Erscheinungsjahr: {{ movie.Year }}<br>
+	Rating (FSK) vorhanden: {{ movie.Rated }} <br>
+	Laufzeit: {{ movie.Runtime }} <br>
+	Genre(s): {{ movie.Genre }} <br>
+	Director(s): {{ movie.Director }} <br>
+	Schauspieler: {{ movie.Actors }} <br>
+	Sprache(n): {{ movie.Language }} <br>
+	Herkunftsland: {{ movie.Country }} <br>
+	Auszeichnungen: {{ movie.Awards }} <br>
+	IMDb Rating: {{ movie.imdbRating }} <br>
+	IMDb Votes: {{ movie.imdbVotes }} <br>
+	Typ: {{ movie.Type }} <br>
+</div><br><br>
+Handlung: {{ movie.Plot }}
