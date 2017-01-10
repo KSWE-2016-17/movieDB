@@ -2,7 +2,7 @@
 
 How to install:
 
-First you need to install Angular. Run in your terminal:
+First you need to install Angular. Run in your terminal
 ```
 sudo npm install -g angular-cli
 ```
