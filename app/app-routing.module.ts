@@ -10,7 +10,7 @@ import { HeroDetailComponent }  from './components/hero-detail.component';
 import { HomeComponent } from "./components/home.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/movies', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'dashboard',  component: DashboardComponent },
   { path: 'home',       component: HomeComponent },
   { path: 'music',      component: MusicComponent },
