@@ -13,7 +13,6 @@ import { Movie } from './class/movie';
 })
 export class MoviesComponent {
 
-	getData;
 	Title;Year;Rated;Released;Runtime;Genre;Director;Writer;Actors;Plot;Language;Country;Awards;
 	Poster;imdbRating;imdbVotes;Type;
 

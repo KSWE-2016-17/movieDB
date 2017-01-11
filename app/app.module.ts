@@ -9,9 +9,6 @@ import { HomeComponent }        from './components/home.component';
 import { MusicComponent }        from './components/music.component';
 import { BooksComponent }        from './components/books.component';
 import { MoviesComponent }        from './components/movies.component';
-import { HeroDetailComponent }  from './components/hero-detail.component';
-import { HeroesComponent }      from './components/heroes.component';
-import { HeroService }          from './components/service/hero.service';
 import { Rest }          from './components/service/rest';
 import { SearchService } from './components/service/searchservice';
 
@@ -28,13 +25,11 @@ import { AppRoutingModule }     from './app-routing.module';
     AppComponent,
     DashboardComponent,
     HomeComponent,
-      MusicComponent,
+    MusicComponent,
     BooksComponent,
-    MoviesComponent,
-    HeroDetailComponent,
-    HeroesComponent
+    MoviesComponent
   ],
-  providers: [ HeroService, Rest, SearchService ],
+  providers: [ Rest, SearchService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
